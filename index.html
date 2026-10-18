@@ -471,7 +471,7 @@
     });
     document.getElementById("adminProtectedContent").hidden = true;
     // Hidden admin entry: no admin link/button is shown on the public homepage.
-    // Desktop: Ctrl+Shift+A. Mobile: tap the footer brand text 7 times quickly.
+    // Desktop: Ctrl+Shift+A. Mobile: tap the footer brand text 9 times quickly.
     function openHiddenAdmin(){document.getElementById("adminPanel").classList.add("open");showAdminView("ordersView");refreshCloudAdmin();}
     document.addEventListener("keydown",e=>{if(e.ctrlKey&&e.shiftKey&&e.key.toLowerCase()==="a"){e.preventDefault();openHiddenAdmin();}});
     const hiddenAdminBrand=document.querySelector(".footer-brand");
